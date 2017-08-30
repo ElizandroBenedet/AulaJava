@@ -23,7 +23,7 @@ import java.util.ArrayList;
             Scanner s=new Scanner(System.in);
 
             
-            System.out.print("Entre com o nome da disciplina: ");
+            System.out.print("por favor, entre com o nome da disciplina: ");
             Prova p= new Prova(s.nextLine());
             
             System.out.print("Entre com a data da prova: ");
