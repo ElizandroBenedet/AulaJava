@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package geradorprova;
+package java_geradorprova;
 
 import java.awt.Desktop;
 import javax.swing.JOptionPane;
@@ -23,7 +23,7 @@ import java.util.ArrayList;
             Scanner s=new Scanner(System.in);
 
             
-            System.out.print("Entre com o nome da disciplina: ");
+            System.out.print("Por favor, entre com o nome da disciplina: ");
             Prova p= new Prova(s.nextLine());
             
             System.out.print("Entre com a data da prova: ");
