@@ -10,6 +10,9 @@ import javax.swing.JOptionPane;
 import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import jdk.jfr.events.FileReadEvent;
 /**
  *
  * @author mathias
@@ -21,7 +24,6 @@ import java.util.ArrayList;
      */
         public static void main(String[] args){
             Scanner s=new Scanner(System.in);
-
             
             System.out.print("Por favor, entre com o nome da disciplina: ");
             Prova p= new Prova(s.nextLine());
@@ -80,53 +82,7 @@ import java.util.ArrayList;
                 }else{
                     System.out.println("Opção inválida!!");
                 }
-
-                
-                
-                
             }
-
-//            for (int i = 0; i < qtd; i++) {
-//                disc=new Discursiva();
-//                System.out.print("Digite a pergunta da "+(i+1)+"ª questão: ");
-//                
-//                disc.setPergunta(s.nextLine());
-//                System.out.print("Digite o peso da "+(i+1)+"ª questão: ");
-//                disc.setPeso(s.nextDouble());
-//                s.nextLine();
-//                System.out.print("Digite o critério de avaliação da "+(i+1)+"ª questão: ");
-//                disc.setCriterioCorrecao(s.nextLine());
-//            }
-//            p.setDiscursivas(disc);
-//            
-//            
-//            
-//            System.out.print("Entre com a quantidade de questões objetivas: ");
-//            qtd=s.nextInt();
-//            s.nextLine();
-//            String[] troca=new String[5];
-//            Objetiva[] objetivas=new Objetiva[qtd];
-//
-//            for (int i = 0; i < qtd; i++) {
-//                objetivas[i]=new Objetiva();
-//                System.out.print("Entre com a pergunta da "+(i+1)+"ª questão: ");
-//                objetivas[i].setPergunta(s.nextLine());
-//
-//                
-//                for (int j = 0; j < 5; j++) {
-//                     System.out.print("Entre com a "+(j+1)+"ª alternativa da "+(i+1)+" questão: ");
-//                     troca[j]=s.nextLine();
-//                }
-//                objetivas[i].setOpcoes(troca);
-//                System.out.print("Entre com a resposta correta da "+(i+1)+"ª questão: ");
-//                objetivas[i].setRespostaCorreta(s.nextInt()-1);
-//                s.nextLine();
-//                System.out.print("Entre com o peso da "+(i+1)+" questão: ");
-//                objetivas[i].setPeso(s.nextInt());
-//                s.nextLine();
-//                   
-//            }
-//            p.setObjetivas(objetivas);
 
             String prova=p.obtemProvaImpressao();
 
@@ -138,24 +94,14 @@ import java.util.ArrayList;
                 try{
                     System.out.print("Nome do arquivo com extensão: ");
                     String arquivoAbrir=s.next();
-                    File aqrv=new File(arquivoAbrir);
+                    
+                    File aqrv=new File("nome_arquivo.txt");
                     FileWriter out=new FileWriter(aqrv);
                     out.write(prova);
-                    Desktop.getDesktop().open(aqrv);
-                    
                     out.close();
 	  	}catch(Exception e){}
                 
             }
-	  		
-            
-            //p.peso=3;
-            
-            //System.out.println(p.obtemDetalhes());
             JOptionPane.showMessageDialog(null, prova);
         }
-       
-        
     }
-    
-
