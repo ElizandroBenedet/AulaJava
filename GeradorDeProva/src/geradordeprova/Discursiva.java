@@ -7,7 +7,7 @@ package geradordeprova;
 
 /**
  *
- * @author mathias
+ * @author Elizandro
  */
 public class Discursiva extends Questao {
     private String criterioCorrecao;

@@ -1,0 +1,15 @@
+Nome da Disciplina: okasda
+Peso da Prova: 3
+Local da Prova: asdasd
+Data da Prova: dasda
+
+	====Perguntas Discursivas=====
+Questão 1) aasda
+Alternativas:
+a) asdsa
+b) asdsa
+c) asdad
+d) asdad
+e) asdasda
+Questão 2) asdsa
+Critério de Correção: dasdada

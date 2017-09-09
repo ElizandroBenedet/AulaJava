@@ -7,7 +7,7 @@ package geradordeprova;
 
 /**
  *
- * @author mathias
+ * @author Elizandro
  */
 abstract class Questao {
     private String pergunta;

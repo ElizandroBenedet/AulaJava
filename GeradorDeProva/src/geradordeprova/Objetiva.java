@@ -7,7 +7,7 @@ package geradordeprova;
 
 /**
  *
- * @author mathias
+ * @author Elizandro
  */
 public class Objetiva extends Questao {
     private String[] opcoes=new String[5];
