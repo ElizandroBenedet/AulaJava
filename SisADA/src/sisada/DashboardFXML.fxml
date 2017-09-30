@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('imagem.png');" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button alignment="BASELINE_RIGHT" layoutX="172.0" layoutY="220.0" mnemonicParsing="false" onAction="#meuDesempenho" prefHeight="60.0" prefWidth="255.0" text="Meu desempenho">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="grafico" accessibleRole="INCREMENT_BUTTON" fitHeight="465.0" fitWidth="30.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                  <Image url="@grafico.png" />
+                        </image>
+            </ImageView>
+         </graphic>
+        
+      </Button>
+      <Button alignment="BASELINE_RIGHT" layoutX="172.0" layoutY="89.0" mnemonicParsing="false" onAction="#minhasAvaliacoes" prefHeight="60.0" prefWidth="255.0" text="Minhas avaliações">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="formando" accessibleRole="INCREMENT_BUTTON" fitHeight="465.0" fitWidth="30.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                  <Image url="@formando.png" />
+                        </image>
+            </ImageView>
+         </graphic>
+        
+      </Button>
+   </children>
+</AnchorPane>

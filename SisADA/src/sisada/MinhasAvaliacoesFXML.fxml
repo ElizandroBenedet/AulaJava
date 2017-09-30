@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="79.0" layoutY="14.0" mnemonicParsing="false" onAction="#informarNota" prefHeight="26.0" prefWidth="189.0" style="-fx-background-color: #0071C5;" text="Informar nota" textAlignment="CENTER" textFill="WHITE" />
+      <Button layoutX="349.0" layoutY="14.0" mnemonicParsing="false" onAction="#novaAvaliacao" prefHeight="26.0" prefWidth="189.0" style="-fx-background-color: #0071C5;" text="Adicionar nova avaliação" textAlignment="CENTER" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="360.0" mnemonicParsing="false" onAction="#voltar" style="-fx-background-color: #0071C5;" text="Voltar" textFill="WHITE" />
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="286.0" prefWidth="575.0">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+         <columns>
+            <TableColumn fx:id="colunaNome" editable="false" prefWidth="150.0" text="Nome" />
+            <TableColumn fx:id="colunaDisciplina" prefWidth="259.0" text="Disciplina" />
+            <TableColumn fx:id="colunaMedia" prefWidth="60.0" text="Média" />
+            <TableColumn fx:id="colunaPeso" prefWidth="52.0" text="Peso" />
+            <TableColumn fx:id="colunaNota" prefWidth="53.0" text="Nota" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
