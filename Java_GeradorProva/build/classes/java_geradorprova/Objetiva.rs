@@ -1,1 +1,0 @@
-geradorprova.Objetiva
